@@ -1,0 +1,70 @@
+Vijji Komali   dt: 02-21-2019
+
+
+Modeling with Logistic Regression, Decision Tree Classifier, and Random Forest Classifier methods of Accuracy 
+
+
+We are processiong the Model train, I am sure we can wait with enthu! Cheer up for the good score
+49.97602653503418
+Logistic Regression--> auroc: 0.6220890833513872   (Training Time: 0.8326013644536336mins)
+188.61217832565308
+Decision Tree Classifier--> auroc: 0.5371709538842244   (Training Time: 3.1435363054275514mins)
+77.15113568305969
+Random Forest Classifier Method--> auroc: 0.6292615720332445   (Training Time: 1.2858522613843282mins)
+
+================================================================================================================  
+Using an LGBM Model
+LGBM tends to do really well in competitions so I want to try it out here!
+!pip install lightgbm
+from sklearn.model_selection import KFold
+from sklearn.metrics import roc_auc_score
+import lightgbm as lgb
+import gc
+
+def model(features, test_features, encoding = 'ohe', n_folds = 5):
+
+submission, fi, metrics = model(a_train_features, a_test_features)
+print('Baseline metrics')
+print(metrics)   
+
+
+Training Data Shape:  (307511, 254)
+Testing Data Shape:  (48744, 254)
+
+
+Training Data Shape:  (307511, 254)
+Testing Data Shape:  (48744, 254)
+Training until validation scores don't improve for 100 rounds.
+[200]	train's auc: 0.798671	train's binary_logloss: 0.548231	valid's auc: 0.756595	valid's binary_logloss: 0.562701
+[400]	train's auc: 0.82782	train's binary_logloss: 0.519093	valid's auc: 0.757079	valid's binary_logloss: 0.54504
+Early stopping, best iteration is:
+[352]	train's auc: 0.821699	train's binary_logloss: 0.525282	valid's auc: 0.75732	valid's binary_logloss: 0.548713
+Training until validation scores don't improve for 100 rounds.
+[200]	train's auc: 0.79825	train's binary_logloss: 0.548657	valid's auc: 0.758713	valid's binary_logloss: 0.563499
+Early stopping, best iteration is:
+[247]	train's auc: 0.806071	train's binary_logloss: 0.540876	valid's auc: 0.758974	valid's binary_logloss: 0.558908
+Training until validation scores don't improve for 100 rounds.
+[200]	train's auc: 0.797715	train's binary_logloss: 0.549522	valid's auc: 0.764136	valid's binary_logloss: 0.564539
+[400]	train's auc: 0.827187	train's binary_logloss: 0.520202	valid's auc: 0.764888	valid's binary_logloss: 0.546505
+Early stopping, best iteration is:
+[318]	train's auc: 0.816323	train's binary_logloss: 0.531145	valid's auc: 0.76511	valid's binary_logloss: 0.553091
+Training until validation scores don't improve for 100 rounds.
+[200]	train's auc: 0.798367	train's binary_logloss: 0.548716	valid's auc: 0.759771	valid's binary_logloss: 0.562103
+Early stopping, best iteration is:
+[246]	train's auc: 0.806066	train's binary_logloss: 0.541127	valid's auc: 0.760094	valid's binary_logloss: 0.557434
+Training until validation scores don't improve for 100 rounds.
+[200]	train's auc: 0.797945	train's binary_logloss: 0.548769	valid's auc: 0.75948	valid's binary_logloss: 0.564534
+[400]	train's auc: 0.82746	train's binary_logloss: 0.519395	valid's auc: 0.759897	valid's binary_logloss: 0.546392
+Early stopping, best iteration is:
+[385]	train's auc: 0.825632	train's binary_logloss: 0.521223	valid's auc: 0.760057	valid's binary_logloss: 0.547428
+Baseline metrics
+      fold     train     valid
+0        0  0.821699  0.757320
+1        1  0.806071  0.758974
+2        2  0.816323  0.765110
+3        3  0.806066  0.760094
+4        4  0.825632  0.760057
+5  overall  0.815158  0.760269
+
+
+
