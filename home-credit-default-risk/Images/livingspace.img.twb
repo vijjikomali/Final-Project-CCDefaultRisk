@@ -1,0 +1,2450 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20183.19.0123.2221                               -->
+<workbook original-version='18.1' source-build='2018.3.3 (20183.19.0123.2221)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='application_train' inline='true' name='federated.0o7yu7h0j0o1gf1cx38ze06fw1dc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='application_train' name='textscan.0firy5m0ibjefj17q4umj0npfe6l'>
+            <connection class='textscan' directory='C:/Users/Vijayalaskmi/Desktop/bootcampwork/homework/CCproject/home-credit-default-risk/Input' filename='application_train.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='age' name='textscan.0rvullw1qw0m6m1bhoh2y1trd1xm'>
+            <connection class='textscan' directory='C:/Users/Vijayalaskmi/Desktop/bootcampwork/homework/CCproject/home-credit-default-risk' filename='age.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0firy5m0ibjefj17q4umj0npfe6l' name='application_train.csv' table='[application_train#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='SK_ID_CURR' ordinal='0' />
+            <column datatype='integer' name='TARGET' ordinal='1' />
+            <column datatype='string' name='NAME_CONTRACT_TYPE' ordinal='2' />
+            <column datatype='string' name='CODE_GENDER' ordinal='3' />
+            <column datatype='string' name='FLAG_OWN_CAR' ordinal='4' />
+            <column datatype='string' name='FLAG_OWN_REALTY' ordinal='5' />
+            <column datatype='integer' name='CNT_CHILDREN' ordinal='6' />
+            <column datatype='real' name='AMT_INCOME_TOTAL' ordinal='7' />
+            <column datatype='real' name='AMT_CREDIT' ordinal='8' />
+            <column datatype='real' name='AMT_ANNUITY' ordinal='9' />
+            <column datatype='real' name='AMT_GOODS_PRICE' ordinal='10' />
+            <column datatype='string' name='NAME_TYPE_SUITE' ordinal='11' />
+            <column datatype='string' name='NAME_INCOME_TYPE' ordinal='12' />
+            <column datatype='string' name='NAME_EDUCATION_TYPE' ordinal='13' />
+            <column datatype='string' name='NAME_FAMILY_STATUS' ordinal='14' />
+            <column datatype='string' name='NAME_HOUSING_TYPE' ordinal='15' />
+            <column datatype='real' name='REGION_POPULATION_RELATIVE' ordinal='16' />
+            <column datatype='integer' name='DAYS_BIRTH' ordinal='17' />
+            <column datatype='integer' name='DAYS_EMPLOYED' ordinal='18' />
+            <column datatype='real' name='DAYS_REGISTRATION' ordinal='19' />
+            <column datatype='integer' name='DAYS_ID_PUBLISH' ordinal='20' />
+            <column datatype='real' name='OWN_CAR_AGE' ordinal='21' />
+            <column datatype='integer' name='FLAG_MOBIL' ordinal='22' />
+            <column datatype='integer' name='FLAG_EMP_PHONE' ordinal='23' />
+            <column datatype='integer' name='FLAG_WORK_PHONE' ordinal='24' />
+            <column datatype='integer' name='FLAG_CONT_MOBILE' ordinal='25' />
+            <column datatype='integer' name='FLAG_PHONE' ordinal='26' />
+            <column datatype='integer' name='FLAG_EMAIL' ordinal='27' />
+            <column datatype='string' name='OCCUPATION_TYPE' ordinal='28' />
+            <column datatype='real' name='CNT_FAM_MEMBERS' ordinal='29' />
+            <column datatype='integer' name='REGION_RATING_CLIENT' ordinal='30' />
+            <column datatype='integer' name='REGION_RATING_CLIENT_W_CITY' ordinal='31' />
+            <column datatype='string' name='WEEKDAY_APPR_PROCESS_START' ordinal='32' />
+            <column datatype='integer' name='HOUR_APPR_PROCESS_START' ordinal='33' />
+            <column datatype='integer' name='REG_REGION_NOT_LIVE_REGION' ordinal='34' />
+            <column datatype='integer' name='REG_REGION_NOT_WORK_REGION' ordinal='35' />
+            <column datatype='integer' name='LIVE_REGION_NOT_WORK_REGION' ordinal='36' />
+            <column datatype='integer' name='REG_CITY_NOT_LIVE_CITY' ordinal='37' />
+            <column datatype='integer' name='REG_CITY_NOT_WORK_CITY' ordinal='38' />
+            <column datatype='integer' name='LIVE_CITY_NOT_WORK_CITY' ordinal='39' />
+            <column datatype='string' name='ORGANIZATION_TYPE' ordinal='40' />
+            <column datatype='real' name='EXT_SOURCE_1' ordinal='41' />
+            <column datatype='real' name='EXT_SOURCE_2' ordinal='42' />
+            <column datatype='real' name='EXT_SOURCE_3' ordinal='43' />
+            <column datatype='real' name='APARTMENTS_AVG' ordinal='44' />
+            <column datatype='real' name='BASEMENTAREA_AVG' ordinal='45' />
+            <column datatype='real' name='YEARS_BEGINEXPLUATATION_AVG' ordinal='46' />
+            <column datatype='real' name='YEARS_BUILD_AVG' ordinal='47' />
+            <column datatype='real' name='COMMONAREA_AVG' ordinal='48' />
+            <column datatype='real' name='ELEVATORS_AVG' ordinal='49' />
+            <column datatype='real' name='ENTRANCES_AVG' ordinal='50' />
+            <column datatype='real' name='FLOORSMAX_AVG' ordinal='51' />
+            <column datatype='real' name='FLOORSMIN_AVG' ordinal='52' />
+            <column datatype='real' name='LANDAREA_AVG' ordinal='53' />
+            <column datatype='real' name='LIVINGAPARTMENTS_AVG' ordinal='54' />
+            <column datatype='real' name='LIVINGAREA_AVG' ordinal='55' />
+            <column datatype='real' name='NONLIVINGAPARTMENTS_AVG' ordinal='56' />
+            <column datatype='real' name='NONLIVINGAREA_AVG' ordinal='57' />
+            <column datatype='real' name='APARTMENTS_MODE' ordinal='58' />
+            <column datatype='real' name='BASEMENTAREA_MODE' ordinal='59' />
+            <column datatype='real' name='YEARS_BEGINEXPLUATATION_MODE' ordinal='60' />
+            <column datatype='real' name='YEARS_BUILD_MODE' ordinal='61' />
+            <column datatype='real' name='COMMONAREA_MODE' ordinal='62' />
+            <column datatype='real' name='ELEVATORS_MODE' ordinal='63' />
+            <column datatype='real' name='ENTRANCES_MODE' ordinal='64' />
+            <column datatype='real' name='FLOORSMAX_MODE' ordinal='65' />
+            <column datatype='real' name='FLOORSMIN_MODE' ordinal='66' />
+            <column datatype='real' name='LANDAREA_MODE' ordinal='67' />
+            <column datatype='real' name='LIVINGAPARTMENTS_MODE' ordinal='68' />
+            <column datatype='real' name='LIVINGAREA_MODE' ordinal='69' />
+            <column datatype='real' name='NONLIVINGAPARTMENTS_MODE' ordinal='70' />
+            <column datatype='real' name='NONLIVINGAREA_MODE' ordinal='71' />
+            <column datatype='real' name='APARTMENTS_MEDI' ordinal='72' />
+            <column datatype='real' name='BASEMENTAREA_MEDI' ordinal='73' />
+            <column datatype='real' name='YEARS_BEGINEXPLUATATION_MEDI' ordinal='74' />
+            <column datatype='real' name='YEARS_BUILD_MEDI' ordinal='75' />
+            <column datatype='real' name='COMMONAREA_MEDI' ordinal='76' />
+            <column datatype='real' name='ELEVATORS_MEDI' ordinal='77' />
+            <column datatype='real' name='ENTRANCES_MEDI' ordinal='78' />
+            <column datatype='real' name='FLOORSMAX_MEDI' ordinal='79' />
+            <column datatype='real' name='FLOORSMIN_MEDI' ordinal='80' />
+            <column datatype='real' name='LANDAREA_MEDI' ordinal='81' />
+            <column datatype='real' name='LIVINGAPARTMENTS_MEDI' ordinal='82' />
+            <column datatype='real' name='LIVINGAREA_MEDI' ordinal='83' />
+            <column datatype='real' name='NONLIVINGAPARTMENTS_MEDI' ordinal='84' />
+            <column datatype='real' name='NONLIVINGAREA_MEDI' ordinal='85' />
+            <column datatype='string' name='FONDKAPREMONT_MODE' ordinal='86' />
+            <column datatype='string' name='HOUSETYPE_MODE' ordinal='87' />
+            <column datatype='real' name='TOTALAREA_MODE' ordinal='88' />
+            <column datatype='string' name='WALLSMATERIAL_MODE' ordinal='89' />
+            <column datatype='string' name='EMERGENCYSTATE_MODE' ordinal='90' />
+            <column datatype='real' name='OBS_30_CNT_SOCIAL_CIRCLE' ordinal='91' />
+            <column datatype='real' name='DEF_30_CNT_SOCIAL_CIRCLE' ordinal='92' />
+            <column datatype='real' name='OBS_60_CNT_SOCIAL_CIRCLE' ordinal='93' />
+            <column datatype='real' name='DEF_60_CNT_SOCIAL_CIRCLE' ordinal='94' />
+            <column datatype='real' name='DAYS_LAST_PHONE_CHANGE' ordinal='95' />
+            <column datatype='integer' name='FLAG_DOCUMENT_2' ordinal='96' />
+            <column datatype='integer' name='FLAG_DOCUMENT_3' ordinal='97' />
+            <column datatype='integer' name='FLAG_DOCUMENT_4' ordinal='98' />
+            <column datatype='integer' name='FLAG_DOCUMENT_5' ordinal='99' />
+            <column datatype='integer' name='FLAG_DOCUMENT_6' ordinal='100' />
+            <column datatype='integer' name='FLAG_DOCUMENT_7' ordinal='101' />
+            <column datatype='integer' name='FLAG_DOCUMENT_8' ordinal='102' />
+            <column datatype='integer' name='FLAG_DOCUMENT_9' ordinal='103' />
+            <column datatype='integer' name='FLAG_DOCUMENT_10' ordinal='104' />
+            <column datatype='integer' name='FLAG_DOCUMENT_11' ordinal='105' />
+            <column datatype='integer' name='FLAG_DOCUMENT_12' ordinal='106' />
+            <column datatype='integer' name='FLAG_DOCUMENT_13' ordinal='107' />
+            <column datatype='integer' name='FLAG_DOCUMENT_14' ordinal='108' />
+            <column datatype='integer' name='FLAG_DOCUMENT_15' ordinal='109' />
+            <column datatype='integer' name='FLAG_DOCUMENT_16' ordinal='110' />
+            <column datatype='integer' name='FLAG_DOCUMENT_17' ordinal='111' />
+            <column datatype='integer' name='FLAG_DOCUMENT_18' ordinal='112' />
+            <column datatype='integer' name='FLAG_DOCUMENT_19' ordinal='113' />
+            <column datatype='integer' name='FLAG_DOCUMENT_20' ordinal='114' />
+            <column datatype='integer' name='FLAG_DOCUMENT_21' ordinal='115' />
+            <column datatype='real' name='AMT_REQ_CREDIT_BUREAU_HOUR' ordinal='116' />
+            <column datatype='real' name='AMT_REQ_CREDIT_BUREAU_DAY' ordinal='117' />
+            <column datatype='real' name='AMT_REQ_CREDIT_BUREAU_WEEK' ordinal='118' />
+            <column datatype='real' name='AMT_REQ_CREDIT_BUREAU_MON' ordinal='119' />
+            <column datatype='real' name='AMT_REQ_CREDIT_BUREAU_QRT' ordinal='120' />
+            <column datatype='real' name='AMT_REQ_CREDIT_BUREAU_YEAR' ordinal='121' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SK_ID_CURR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SK_ID_CURR]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>SK_ID_CURR</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TARGET</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TARGET]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>TARGET</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME_CONTRACT_TYPE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME_CONTRACT_TYPE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>NAME_CONTRACT_TYPE</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CODE_GENDER</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CODE_GENDER]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>CODE_GENDER</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_OWN_CAR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FLAG_OWN_CAR]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLAG_OWN_CAR</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_OWN_REALTY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FLAG_OWN_REALTY]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLAG_OWN_REALTY</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CNT_CHILDREN</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CNT_CHILDREN]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>CNT_CHILDREN</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AMT_INCOME_TOTAL</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AMT_INCOME_TOTAL]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>AMT_INCOME_TOTAL</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AMT_CREDIT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AMT_CREDIT]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>AMT_CREDIT</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AMT_ANNUITY</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AMT_ANNUITY]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>AMT_ANNUITY</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AMT_GOODS_PRICE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AMT_GOODS_PRICE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>AMT_GOODS_PRICE</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME_TYPE_SUITE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME_TYPE_SUITE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>NAME_TYPE_SUITE</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME_INCOME_TYPE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME_INCOME_TYPE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>NAME_INCOME_TYPE</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME_EDUCATION_TYPE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME_EDUCATION_TYPE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>NAME_EDUCATION_TYPE</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME_FAMILY_STATUS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME_FAMILY_STATUS]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>NAME_FAMILY_STATUS</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME_HOUSING_TYPE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME_HOUSING_TYPE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>NAME_HOUSING_TYPE</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REGION_POPULATION_RELATIVE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[REGION_POPULATION_RELATIVE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>REGION_POPULATION_RELATIVE</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DAYS_BIRTH</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DAYS_BIRTH]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>DAYS_BIRTH</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DAYS_EMPLOYED</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DAYS_EMPLOYED]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>DAYS_EMPLOYED</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DAYS_REGISTRATION</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DAYS_REGISTRATION]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>DAYS_REGISTRATION</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DAYS_ID_PUBLISH</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DAYS_ID_PUBLISH]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>DAYS_ID_PUBLISH</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OWN_CAR_AGE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[OWN_CAR_AGE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>OWN_CAR_AGE</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_MOBIL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_MOBIL]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLAG_MOBIL</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_EMP_PHONE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_EMP_PHONE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLAG_EMP_PHONE</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_WORK_PHONE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_WORK_PHONE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLAG_WORK_PHONE</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_CONT_MOBILE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_CONT_MOBILE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLAG_CONT_MOBILE</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_PHONE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_PHONE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLAG_PHONE</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_EMAIL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_EMAIL]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLAG_EMAIL</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OCCUPATION_TYPE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OCCUPATION_TYPE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>OCCUPATION_TYPE</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CNT_FAM_MEMBERS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CNT_FAM_MEMBERS]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>CNT_FAM_MEMBERS</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REGION_RATING_CLIENT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[REGION_RATING_CLIENT]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>REGION_RATING_CLIENT</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REGION_RATING_CLIENT_W_CITY</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[REGION_RATING_CLIENT_W_CITY]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>REGION_RATING_CLIENT_W_CITY</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WEEKDAY_APPR_PROCESS_START</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[WEEKDAY_APPR_PROCESS_START]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>WEEKDAY_APPR_PROCESS_START</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HOUR_APPR_PROCESS_START</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HOUR_APPR_PROCESS_START]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>HOUR_APPR_PROCESS_START</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REG_REGION_NOT_LIVE_REGION</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[REG_REGION_NOT_LIVE_REGION]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>REG_REGION_NOT_LIVE_REGION</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REG_REGION_NOT_WORK_REGION</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[REG_REGION_NOT_WORK_REGION]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>REG_REGION_NOT_WORK_REGION</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LIVE_REGION_NOT_WORK_REGION</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LIVE_REGION_NOT_WORK_REGION]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>LIVE_REGION_NOT_WORK_REGION</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REG_CITY_NOT_LIVE_CITY</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[REG_CITY_NOT_LIVE_CITY]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>REG_CITY_NOT_LIVE_CITY</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REG_CITY_NOT_WORK_CITY</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[REG_CITY_NOT_WORK_CITY]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>REG_CITY_NOT_WORK_CITY</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LIVE_CITY_NOT_WORK_CITY</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LIVE_CITY_NOT_WORK_CITY]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>LIVE_CITY_NOT_WORK_CITY</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ORGANIZATION_TYPE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ORGANIZATION_TYPE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>ORGANIZATION_TYPE</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EXT_SOURCE_1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EXT_SOURCE_1]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>EXT_SOURCE_1</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EXT_SOURCE_2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EXT_SOURCE_2]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>EXT_SOURCE_2</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EXT_SOURCE_3</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EXT_SOURCE_3]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>EXT_SOURCE_3</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>APARTMENTS_AVG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[APARTMENTS_AVG]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>APARTMENTS_AVG</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BASEMENTAREA_AVG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BASEMENTAREA_AVG]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>BASEMENTAREA_AVG</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEARS_BEGINEXPLUATATION_AVG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[YEARS_BEGINEXPLUATATION_AVG]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>YEARS_BEGINEXPLUATATION_AVG</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEARS_BUILD_AVG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[YEARS_BUILD_AVG]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>YEARS_BUILD_AVG</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COMMONAREA_AVG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[COMMONAREA_AVG]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>COMMONAREA_AVG</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ELEVATORS_AVG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ELEVATORS_AVG]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>ELEVATORS_AVG</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ENTRANCES_AVG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ENTRANCES_AVG]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>ENTRANCES_AVG</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLOORSMAX_AVG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FLOORSMAX_AVG]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLOORSMAX_AVG</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLOORSMIN_AVG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FLOORSMIN_AVG]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLOORSMIN_AVG</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LANDAREA_AVG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LANDAREA_AVG]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>LANDAREA_AVG</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LIVINGAPARTMENTS_AVG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LIVINGAPARTMENTS_AVG]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>LIVINGAPARTMENTS_AVG</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LIVINGAREA_AVG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LIVINGAREA_AVG]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>LIVINGAREA_AVG</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NONLIVINGAPARTMENTS_AVG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NONLIVINGAPARTMENTS_AVG]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>NONLIVINGAPARTMENTS_AVG</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NONLIVINGAREA_AVG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NONLIVINGAREA_AVG]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>NONLIVINGAREA_AVG</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>APARTMENTS_MODE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[APARTMENTS_MODE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>APARTMENTS_MODE</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BASEMENTAREA_MODE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BASEMENTAREA_MODE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>BASEMENTAREA_MODE</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEARS_BEGINEXPLUATATION_MODE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[YEARS_BEGINEXPLUATATION_MODE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>YEARS_BEGINEXPLUATATION_MODE</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEARS_BUILD_MODE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[YEARS_BUILD_MODE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>YEARS_BUILD_MODE</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COMMONAREA_MODE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[COMMONAREA_MODE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>COMMONAREA_MODE</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ELEVATORS_MODE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ELEVATORS_MODE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>ELEVATORS_MODE</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ENTRANCES_MODE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ENTRANCES_MODE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>ENTRANCES_MODE</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLOORSMAX_MODE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FLOORSMAX_MODE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLOORSMAX_MODE</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLOORSMIN_MODE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FLOORSMIN_MODE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLOORSMIN_MODE</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LANDAREA_MODE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LANDAREA_MODE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>LANDAREA_MODE</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LIVINGAPARTMENTS_MODE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LIVINGAPARTMENTS_MODE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>LIVINGAPARTMENTS_MODE</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LIVINGAREA_MODE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LIVINGAREA_MODE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>LIVINGAREA_MODE</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NONLIVINGAPARTMENTS_MODE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NONLIVINGAPARTMENTS_MODE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>NONLIVINGAPARTMENTS_MODE</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NONLIVINGAREA_MODE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NONLIVINGAREA_MODE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>NONLIVINGAREA_MODE</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>APARTMENTS_MEDI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[APARTMENTS_MEDI]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>APARTMENTS_MEDI</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BASEMENTAREA_MEDI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BASEMENTAREA_MEDI]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>BASEMENTAREA_MEDI</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEARS_BEGINEXPLUATATION_MEDI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[YEARS_BEGINEXPLUATATION_MEDI]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>YEARS_BEGINEXPLUATATION_MEDI</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEARS_BUILD_MEDI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[YEARS_BUILD_MEDI]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>YEARS_BUILD_MEDI</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COMMONAREA_MEDI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[COMMONAREA_MEDI]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>COMMONAREA_MEDI</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ELEVATORS_MEDI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ELEVATORS_MEDI]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>ELEVATORS_MEDI</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ENTRANCES_MEDI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ENTRANCES_MEDI]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>ENTRANCES_MEDI</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLOORSMAX_MEDI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FLOORSMAX_MEDI]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLOORSMAX_MEDI</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLOORSMIN_MEDI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FLOORSMIN_MEDI]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLOORSMIN_MEDI</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LANDAREA_MEDI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LANDAREA_MEDI]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>LANDAREA_MEDI</remote-alias>
+            <ordinal>81</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LIVINGAPARTMENTS_MEDI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LIVINGAPARTMENTS_MEDI]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>LIVINGAPARTMENTS_MEDI</remote-alias>
+            <ordinal>82</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LIVINGAREA_MEDI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LIVINGAREA_MEDI]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>LIVINGAREA_MEDI</remote-alias>
+            <ordinal>83</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NONLIVINGAPARTMENTS_MEDI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NONLIVINGAPARTMENTS_MEDI]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>NONLIVINGAPARTMENTS_MEDI</remote-alias>
+            <ordinal>84</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NONLIVINGAREA_MEDI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NONLIVINGAREA_MEDI]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>NONLIVINGAREA_MEDI</remote-alias>
+            <ordinal>85</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FONDKAPREMONT_MODE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FONDKAPREMONT_MODE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FONDKAPREMONT_MODE</remote-alias>
+            <ordinal>86</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HOUSETYPE_MODE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HOUSETYPE_MODE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>HOUSETYPE_MODE</remote-alias>
+            <ordinal>87</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOTALAREA_MODE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TOTALAREA_MODE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>TOTALAREA_MODE</remote-alias>
+            <ordinal>88</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WALLSMATERIAL_MODE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[WALLSMATERIAL_MODE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>WALLSMATERIAL_MODE</remote-alias>
+            <ordinal>89</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EMERGENCYSTATE_MODE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EMERGENCYSTATE_MODE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>EMERGENCYSTATE_MODE</remote-alias>
+            <ordinal>90</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OBS_30_CNT_SOCIAL_CIRCLE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[OBS_30_CNT_SOCIAL_CIRCLE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>OBS_30_CNT_SOCIAL_CIRCLE</remote-alias>
+            <ordinal>91</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DEF_30_CNT_SOCIAL_CIRCLE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DEF_30_CNT_SOCIAL_CIRCLE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>DEF_30_CNT_SOCIAL_CIRCLE</remote-alias>
+            <ordinal>92</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OBS_60_CNT_SOCIAL_CIRCLE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[OBS_60_CNT_SOCIAL_CIRCLE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>OBS_60_CNT_SOCIAL_CIRCLE</remote-alias>
+            <ordinal>93</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DEF_60_CNT_SOCIAL_CIRCLE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DEF_60_CNT_SOCIAL_CIRCLE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>DEF_60_CNT_SOCIAL_CIRCLE</remote-alias>
+            <ordinal>94</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DAYS_LAST_PHONE_CHANGE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DAYS_LAST_PHONE_CHANGE]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>DAYS_LAST_PHONE_CHANGE</remote-alias>
+            <ordinal>95</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_2]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_2</remote-alias>
+            <ordinal>96</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_3]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_3</remote-alias>
+            <ordinal>97</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_4]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_4</remote-alias>
+            <ordinal>98</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_5]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_5</remote-alias>
+            <ordinal>99</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_6</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_6]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_6</remote-alias>
+            <ordinal>100</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_7</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_7]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_7</remote-alias>
+            <ordinal>101</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_8</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_8]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_8</remote-alias>
+            <ordinal>102</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_9</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_9]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_9</remote-alias>
+            <ordinal>103</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_10</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_10]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_10</remote-alias>
+            <ordinal>104</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_11</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_11]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_11</remote-alias>
+            <ordinal>105</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_12</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_12]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_12</remote-alias>
+            <ordinal>106</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_13</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_13]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_13</remote-alias>
+            <ordinal>107</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_14</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_14]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_14</remote-alias>
+            <ordinal>108</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_15</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_15]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_15</remote-alias>
+            <ordinal>109</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_16</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_16]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_16</remote-alias>
+            <ordinal>110</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_17</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_17]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_17</remote-alias>
+            <ordinal>111</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_18</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_18]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_18</remote-alias>
+            <ordinal>112</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_19</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_19]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_19</remote-alias>
+            <ordinal>113</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_20</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_20]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_20</remote-alias>
+            <ordinal>114</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLAG_DOCUMENT_21</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FLAG_DOCUMENT_21]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>FLAG_DOCUMENT_21</remote-alias>
+            <ordinal>115</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AMT_REQ_CREDIT_BUREAU_HOUR</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AMT_REQ_CREDIT_BUREAU_HOUR]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>AMT_REQ_CREDIT_BUREAU_HOUR</remote-alias>
+            <ordinal>116</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AMT_REQ_CREDIT_BUREAU_DAY</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AMT_REQ_CREDIT_BUREAU_DAY]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>AMT_REQ_CREDIT_BUREAU_DAY</remote-alias>
+            <ordinal>117</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AMT_REQ_CREDIT_BUREAU_WEEK</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AMT_REQ_CREDIT_BUREAU_WEEK]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>AMT_REQ_CREDIT_BUREAU_WEEK</remote-alias>
+            <ordinal>118</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AMT_REQ_CREDIT_BUREAU_MON</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AMT_REQ_CREDIT_BUREAU_MON]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>AMT_REQ_CREDIT_BUREAU_MON</remote-alias>
+            <ordinal>119</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AMT_REQ_CREDIT_BUREAU_QRT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AMT_REQ_CREDIT_BUREAU_QRT]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>AMT_REQ_CREDIT_BUREAU_QRT</remote-alias>
+            <ordinal>120</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AMT_REQ_CREDIT_BUREAU_YEAR</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AMT_REQ_CREDIT_BUREAU_YEAR]</local-name>
+            <parent-name>[application_train.csv]</parent-name>
+            <remote-alias>AMT_REQ_CREDIT_BUREAU_YEAR</remote-alias>
+            <ordinal>121</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Amt Annuity' datatype='real' name='[AMT_ANNUITY]' role='measure' type='quantitative' />
+      <column caption='Amt Credit' datatype='real' name='[AMT_CREDIT]' role='measure' type='quantitative' />
+      <column caption='Amt Goods Price' datatype='real' name='[AMT_GOODS_PRICE]' role='measure' type='quantitative' />
+      <column caption='Amt Income Total' datatype='real' name='[AMT_INCOME_TOTAL]' role='measure' type='quantitative' />
+      <column caption='Amt Req Credit Bureau Day' datatype='real' name='[AMT_REQ_CREDIT_BUREAU_DAY]' role='dimension' type='quantitative' />
+      <column caption='Amt Req Credit Bureau Hour' datatype='real' name='[AMT_REQ_CREDIT_BUREAU_HOUR]' role='measure' type='quantitative' />
+      <column caption='Amt Req Credit Bureau Mon' datatype='real' name='[AMT_REQ_CREDIT_BUREAU_MON]' role='measure' type='quantitative' />
+      <column caption='Amt Req Credit Bureau Qrt' datatype='real' name='[AMT_REQ_CREDIT_BUREAU_QRT]' role='measure' type='quantitative' />
+      <column caption='Amt Req Credit Bureau Week' datatype='real' name='[AMT_REQ_CREDIT_BUREAU_WEEK]' role='dimension' type='quantitative' />
+      <column caption='Amt Req Credit Bureau Year' datatype='real' name='[AMT_REQ_CREDIT_BUREAU_YEAR]' role='dimension' type='quantitative' />
+      <column caption='Apartments Avg' datatype='real' name='[APARTMENTS_AVG]' role='measure' type='quantitative' />
+      <column caption='Apartments Medi' datatype='real' name='[APARTMENTS_MEDI]' role='measure' type='quantitative' />
+      <column caption='Apartments Mode' datatype='real' name='[APARTMENTS_MODE]' role='measure' type='quantitative' />
+      <column caption='Basementarea Avg' datatype='real' name='[BASEMENTAREA_AVG]' role='measure' type='quantitative' />
+      <column caption='Basementarea Medi' datatype='real' name='[BASEMENTAREA_MEDI]' role='measure' type='quantitative' />
+      <column caption='Basementarea Mode' datatype='real' name='[BASEMENTAREA_MODE]' role='measure' type='quantitative' />
+      <column caption='Cnt Children' datatype='integer' name='[CNT_CHILDREN]' role='measure' type='quantitative' />
+      <column caption='Cnt Fam Members' datatype='real' name='[CNT_FAM_MEMBERS]' role='measure' type='quantitative' />
+      <column caption='Code Gender' datatype='string' name='[CODE_GENDER]' role='dimension' type='nominal' />
+      <column caption='Commonarea Avg' datatype='real' name='[COMMONAREA_AVG]' role='measure' type='quantitative' />
+      <column caption='Commonarea Medi' datatype='real' name='[COMMONAREA_MEDI]' role='measure' type='quantitative' />
+      <column caption='Commonarea Mode' datatype='real' name='[COMMONAREA_MODE]' role='measure' type='quantitative' />
+      <column caption='Days Birth' datatype='integer' name='[DAYS_BIRTH]' role='measure' type='quantitative' />
+      <column caption='Days Employed' datatype='integer' name='[DAYS_EMPLOYED]' role='measure' type='quantitative' />
+      <column caption='Days Id Publish' datatype='integer' name='[DAYS_ID_PUBLISH]' role='measure' type='quantitative' />
+      <column caption='Days Last Phone Change' datatype='real' name='[DAYS_LAST_PHONE_CHANGE]' role='measure' type='quantitative' />
+      <column caption='Days Registration' datatype='real' name='[DAYS_REGISTRATION]' role='measure' type='quantitative' />
+      <column caption='Def 30 Cnt Social Circle' datatype='real' name='[DEF_30_CNT_SOCIAL_CIRCLE]' role='measure' type='quantitative' />
+      <column caption='Def 60 Cnt Social Circle' datatype='real' name='[DEF_60_CNT_SOCIAL_CIRCLE]' role='measure' type='quantitative' />
+      <column caption='Elevators Avg' datatype='real' name='[ELEVATORS_AVG]' role='measure' type='quantitative' />
+      <column caption='Elevators Medi' datatype='real' name='[ELEVATORS_MEDI]' role='measure' type='quantitative' />
+      <column caption='Elevators Mode' datatype='real' name='[ELEVATORS_MODE]' role='measure' type='quantitative' />
+      <column caption='Emergencystate Mode' datatype='string' name='[EMERGENCYSTATE_MODE]' role='dimension' type='nominal' />
+      <column caption='Entrances Avg' datatype='real' name='[ENTRANCES_AVG]' role='measure' type='quantitative' />
+      <column caption='Entrances Medi' datatype='real' name='[ENTRANCES_MEDI]' role='measure' type='quantitative' />
+      <column caption='Entrances Mode' datatype='real' name='[ENTRANCES_MODE]' role='measure' type='quantitative' />
+      <column caption='Ext Source 1' datatype='real' name='[EXT_SOURCE_1]' role='measure' type='quantitative' />
+      <column caption='Ext Source 2' datatype='real' name='[EXT_SOURCE_2]' role='measure' type='quantitative' />
+      <column caption='Ext Source 3' datatype='real' name='[EXT_SOURCE_3]' role='measure' type='quantitative' />
+      <column caption='Flag Cont Mobile' datatype='integer' name='[FLAG_CONT_MOBILE]' role='measure' type='quantitative' />
+      <column caption='Flag Document 10' datatype='integer' name='[FLAG_DOCUMENT_10]' role='measure' type='quantitative' />
+      <column caption='Flag Document 11' datatype='integer' name='[FLAG_DOCUMENT_11]' role='measure' type='quantitative' />
+      <column caption='Flag Document 12' datatype='integer' name='[FLAG_DOCUMENT_12]' role='measure' type='quantitative' />
+      <column caption='Flag Document 13' datatype='integer' name='[FLAG_DOCUMENT_13]' role='measure' type='quantitative' />
+      <column caption='Flag Document 14' datatype='integer' name='[FLAG_DOCUMENT_14]' role='measure' type='quantitative' />
+      <column caption='Flag Document 15' datatype='integer' name='[FLAG_DOCUMENT_15]' role='measure' type='quantitative' />
+      <column caption='Flag Document 16' datatype='integer' name='[FLAG_DOCUMENT_16]' role='measure' type='quantitative' />
+      <column caption='Flag Document 17' datatype='integer' name='[FLAG_DOCUMENT_17]' role='measure' type='quantitative' />
+      <column caption='Flag Document 18' datatype='integer' name='[FLAG_DOCUMENT_18]' role='measure' type='quantitative' />
+      <column caption='Flag Document 19' datatype='integer' name='[FLAG_DOCUMENT_19]' role='measure' type='quantitative' />
+      <column caption='Flag Document 20' datatype='integer' name='[FLAG_DOCUMENT_20]' role='measure' type='quantitative' />
+      <column caption='Flag Document 21' datatype='integer' name='[FLAG_DOCUMENT_21]' role='measure' type='quantitative' />
+      <column caption='Flag Document 2' datatype='integer' name='[FLAG_DOCUMENT_2]' role='measure' type='quantitative' />
+      <column caption='Flag Document 3' datatype='integer' name='[FLAG_DOCUMENT_3]' role='measure' type='quantitative' />
+      <column caption='Flag Document 4' datatype='integer' name='[FLAG_DOCUMENT_4]' role='measure' type='quantitative' />
+      <column caption='Flag Document 5' datatype='integer' name='[FLAG_DOCUMENT_5]' role='measure' type='quantitative' />
+      <column caption='Flag Document 6' datatype='integer' name='[FLAG_DOCUMENT_6]' role='measure' type='quantitative' />
+      <column caption='Flag Document 7' datatype='integer' name='[FLAG_DOCUMENT_7]' role='measure' type='quantitative' />
+      <column caption='Flag Document 8' datatype='integer' name='[FLAG_DOCUMENT_8]' role='measure' type='quantitative' />
+      <column caption='Flag Document 9' datatype='integer' name='[FLAG_DOCUMENT_9]' role='measure' type='quantitative' />
+      <column caption='Flag Email' datatype='integer' name='[FLAG_EMAIL]' role='measure' type='quantitative' />
+      <column caption='Flag Emp Phone' datatype='integer' name='[FLAG_EMP_PHONE]' role='measure' type='quantitative' />
+      <column caption='Flag Mobil' datatype='integer' name='[FLAG_MOBIL]' role='measure' type='quantitative' />
+      <column caption='Flag Own Car' datatype='string' name='[FLAG_OWN_CAR]' role='dimension' type='nominal' />
+      <column caption='Flag Own Realty' datatype='string' name='[FLAG_OWN_REALTY]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Flag Phone' datatype='integer' name='[FLAG_PHONE]' role='measure' type='quantitative' />
+      <column caption='Flag Work Phone' datatype='integer' name='[FLAG_WORK_PHONE]' role='measure' type='quantitative' />
+      <column caption='Floorsmax Avg' datatype='real' name='[FLOORSMAX_AVG]' role='measure' type='quantitative' />
+      <column caption='Floorsmax Medi' datatype='real' name='[FLOORSMAX_MEDI]' role='measure' type='quantitative' />
+      <column caption='Floorsmax Mode' datatype='real' name='[FLOORSMAX_MODE]' role='measure' type='quantitative' />
+      <column caption='Floorsmin Avg' datatype='real' name='[FLOORSMIN_AVG]' role='measure' type='quantitative' />
+      <column caption='Floorsmin Medi' datatype='real' name='[FLOORSMIN_MEDI]' role='measure' type='quantitative' />
+      <column caption='Floorsmin Mode' datatype='real' name='[FLOORSMIN_MODE]' role='measure' type='quantitative' />
+      <column caption='Fondkapremont Mode' datatype='string' name='[FONDKAPREMONT_MODE]' role='dimension' type='nominal' />
+      <column caption='Hour Appr Process Start' datatype='integer' name='[HOUR_APPR_PROCESS_START]' role='measure' type='quantitative' />
+      <column caption='Housetype Mode' datatype='string' name='[HOUSETYPE_MODE]' role='dimension' type='nominal' />
+      <column caption='Landarea Avg' datatype='real' name='[LANDAREA_AVG]' role='measure' type='quantitative' />
+      <column caption='Landarea Medi' datatype='real' name='[LANDAREA_MEDI]' role='measure' type='quantitative' />
+      <column caption='Landarea Mode' datatype='real' name='[LANDAREA_MODE]' role='measure' type='quantitative' />
+      <column caption='Live City Not Work City' datatype='integer' name='[LIVE_CITY_NOT_WORK_CITY]' role='measure' type='quantitative' />
+      <column caption='Live Region Not Work Region' datatype='integer' name='[LIVE_REGION_NOT_WORK_REGION]' role='measure' type='quantitative' />
+      <column caption='Livingapartments Avg' datatype='real' name='[LIVINGAPARTMENTS_AVG]' role='measure' type='quantitative' />
+      <column caption='Livingapartments Medi' datatype='real' name='[LIVINGAPARTMENTS_MEDI]' role='measure' type='quantitative' />
+      <column caption='Livingapartments Mode' datatype='real' name='[LIVINGAPARTMENTS_MODE]' role='measure' type='quantitative' />
+      <column caption='Livingarea Avg' datatype='real' name='[LIVINGAREA_AVG]' role='measure' type='quantitative' />
+      <column caption='Livingarea Medi' datatype='real' name='[LIVINGAREA_MEDI]' role='measure' type='quantitative' />
+      <column caption='Livingarea Mode' datatype='real' name='[LIVINGAREA_MODE]' role='measure' type='quantitative' />
+      <column caption='Name Contract Type' datatype='string' name='[NAME_CONTRACT_TYPE]' role='dimension' type='nominal' />
+      <column caption='Name Education Type' datatype='string' name='[NAME_EDUCATION_TYPE]' role='dimension' type='nominal' />
+      <column caption='Name Family Status' datatype='string' name='[NAME_FAMILY_STATUS]' role='dimension' type='nominal' />
+      <column caption='Name Housing Type' datatype='string' name='[NAME_HOUSING_TYPE]' role='dimension' type='nominal' />
+      <column caption='Name Income Type' datatype='string' name='[NAME_INCOME_TYPE]' role='dimension' type='nominal' />
+      <column caption='Name Type Suite' datatype='string' name='[NAME_TYPE_SUITE]' role='dimension' type='nominal' />
+      <column caption='Nonlivingapartments Avg' datatype='real' name='[NONLIVINGAPARTMENTS_AVG]' role='measure' type='quantitative' />
+      <column caption='Nonlivingapartments Medi' datatype='real' name='[NONLIVINGAPARTMENTS_MEDI]' role='measure' type='quantitative' />
+      <column caption='Nonlivingapartments Mode' datatype='real' name='[NONLIVINGAPARTMENTS_MODE]' role='measure' type='quantitative' />
+      <column caption='Nonlivingarea Avg' datatype='real' name='[NONLIVINGAREA_AVG]' role='measure' type='quantitative' />
+      <column caption='Nonlivingarea Medi' datatype='real' name='[NONLIVINGAREA_MEDI]' role='measure' type='quantitative' />
+      <column caption='Nonlivingarea Mode' datatype='real' name='[NONLIVINGAREA_MODE]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Obs 30 Cnt Social Circle' datatype='real' name='[OBS_30_CNT_SOCIAL_CIRCLE]' role='measure' type='quantitative' />
+      <column caption='Obs 60 Cnt Social Circle' datatype='real' name='[OBS_60_CNT_SOCIAL_CIRCLE]' role='measure' type='quantitative' />
+      <column caption='Occupation Type' datatype='string' name='[OCCUPATION_TYPE]' role='dimension' type='nominal' />
+      <column caption='Organization Type' datatype='string' name='[ORGANIZATION_TYPE]' role='dimension' type='nominal' />
+      <column caption='Own Car Age' datatype='real' name='[OWN_CAR_AGE]' role='measure' type='quantitative' />
+      <column datatype='real' name='[RATE_INTEREST_PRIMARY]' role='dimension' semantic-role='[County].[Name]' type='ordinal' />
+      <column caption='Region Population Relative' datatype='real' name='[REGION_POPULATION_RELATIVE]' role='measure' type='quantitative' />
+      <column caption='Region Rating Client' datatype='integer' name='[REGION_RATING_CLIENT]' role='measure' type='quantitative' />
+      <column caption='Region Rating Client W City' datatype='integer' name='[REGION_RATING_CLIENT_W_CITY]' role='measure' type='quantitative' />
+      <column caption='Reg City Not Live City' datatype='integer' name='[REG_CITY_NOT_LIVE_CITY]' role='measure' type='quantitative' />
+      <column caption='Reg City Not Work City' datatype='integer' name='[REG_CITY_NOT_WORK_CITY]' role='measure' type='quantitative' />
+      <column caption='Reg Region Not Live Region' datatype='integer' name='[REG_REGION_NOT_LIVE_REGION]' role='measure' type='quantitative' />
+      <column caption='Reg Region Not Work Region' datatype='integer' name='[REG_REGION_NOT_WORK_REGION]' role='measure' type='quantitative' />
+      <column caption='Sk Id Curr' datatype='integer' name='[SK_ID_CURR]' role='measure' type='quantitative' />
+      <column caption='Target' datatype='integer' name='[TARGET]' role='measure' type='quantitative' />
+      <column caption='Totalarea Mode' datatype='real' name='[TOTALAREA_MODE]' role='measure' type='quantitative' />
+      <column caption='Wallsmaterial Mode' datatype='string' name='[WALLSMATERIAL_MODE]' role='dimension' type='nominal' />
+      <column caption='Weekday Appr Process Start' datatype='string' name='[WEEKDAY_APPR_PROCESS_START]' role='dimension' type='nominal' />
+      <column caption='Years Beginexpluatation Avg' datatype='real' name='[YEARS_BEGINEXPLUATATION_AVG]' role='measure' type='quantitative' />
+      <column caption='Years Beginexpluatation Medi' datatype='real' name='[YEARS_BEGINEXPLUATATION_MEDI]' role='measure' type='quantitative' />
+      <column caption='Years Beginexpluatation Mode' datatype='real' name='[YEARS_BEGINEXPLUATATION_MODE]' role='measure' type='quantitative' />
+      <column caption='Years Build Avg' datatype='real' name='[YEARS_BUILD_AVG]' role='measure' type='quantitative' />
+      <column caption='Years Build Medi' datatype='real' name='[YEARS_BUILD_MEDI]' role='measure' type='quantitative' />
+      <column caption='Years Build Mode' datatype='real' name='[YEARS_BUILD_MODE]' role='measure' type='quantitative' />
+      <column-instance column='[FLAG_OWN_REALTY]' derivation='None' name='[none:FLAG_OWN_REALTY:nk]' pivot='key' type='nominal' />
+      <column-instance column='[HOUSETYPE_MODE]' derivation='None' name='[none:HOUSETYPE_MODE:nk]' pivot='key' type='nominal' />
+      <column-instance column='[NAME_CONTRACT_TYPE]' derivation='None' name='[none:NAME_CONTRACT_TYPE:nk]' pivot='key' type='nominal' />
+      <column-instance column='[NAME_INCOME_TYPE]' derivation='None' name='[none:NAME_INCOME_TYPE:nk]' pivot='key' type='nominal' />
+      <group hidden='true' name='[Exclusions (Housetype Mode,Name Contract Type,Name Income Type)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:HOUSETYPE_MODE:nk]' />
+          <groupfilter function='level-members' level='[none:NAME_CONTRACT_TYPE:nk]' />
+          <groupfilter function='level-members' level='[none:NAME_INCOME_TYPE:nk]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' dim-percentage='0.636929' measure-ordering='alphabetic' measure-percentage='0.363071' show-structure='true' user-set-layout='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:FLAG_OWN_REALTY:nk]' palette='superfishel_stone_10_0' type='palette'>
+            <map to='#6388b4'>
+              <bucket>&quot;N&quot;</bucket>
+            </map>
+            <map to='#ffae34'>
+              <bucket>&quot;Y&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource inline='true' name='Mapbox' source-platform='win' version='18.1'>
+      <connection api-key='pk.eyJ1Ijoidmlqamlrb21hbGkiLCJhIjoiY2pxbWpyeXAzMDJsZDN5b2N0djZ2MzE0cSJ9.dWayph2vNAy2-8OI94a8UA' class='MapBox' description='Mapbox High Contrast' full-url='https://api.mapbox.com/v4/{L}/{Z}/{X}/{Y}{D}.png256?access_token=pk.eyJ1Ijoidmlqamlrb21hbGkiLCJhIjoiY2pxbWpyeXAzMDJsZDN5b2N0djZ2MzE0cSJ9.dWayph2vNAy2-8OI94a8UA' inline='true' layer-separator=',' offline='' port='443' server='api.mapbox.com' service='https' tileset='US\normal' url-format='/v4/{L}/{Z}/{X}/{Y}{D}.png256?access_token=pk.eyJ1Ijoidmlqamlrb21hbGkiLCJhIjoiY2pxbWpyeXAzMDJsZDN5b2N0djZ2MzE0cSJ9.dWayph2vNAy2-8OI94a8UA' username='' wait-tile-color='#dddddd' />
+      <languages />
+      <layers>
+        <layer display-name='High Contrast v3' name='mapbox.high-contrast' show-ui='true' type='features' />
+      </layers>
+      <properties />
+      <map-styles>
+        <map-style display-name='Mapbox' name='Mapbox' wait-tile-color='#dddddd'>
+          <map-layer-style name='High Contrast v3' request-string='mapbox.high-contrast' />
+        </map-style>
+      </map-styles>
+      <mapsource-defaults version='18.1'>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='mapbox.high-contrast' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+      </mapsource-defaults>
+      <map-attribution copyright-string='About Maps' copyright-url='http://www.tableau.com/mapdata' short-copyright-string='' />
+    </mapsource>
+    <mapsource inline='true' name='Normal' source-platform='win' version='18.1'>
+      <connection api-key='pk.eyJ1Ijoidmlqamlrb21hbGkiLCJhIjoiY2pxbWpyeXAzMDJsZDN5b2N0djZ2MzE0cSJ9.dWayph2vNAy2-8OI94a8UA' class='MapBox' description='Mapbox Basic' full-url='https://api.mapbox.com/v4/{L}/{Z}/{X}/{Y}{D}.png256?access_token=pk.eyJ1Ijoidmlqamlrb21hbGkiLCJhIjoiY2pxbWpyeXAzMDJsZDN5b2N0djZ2MzE0cSJ9.dWayph2vNAy2-8OI94a8UA' inline='true' layer-separator=',' offline='' port='443' server='api.mapbox.com' service='https' url-format='/v4/{L}/{Z}/{X}/{Y}{D}.png256?access_token=pk.eyJ1Ijoidmlqamlrb21hbGkiLCJhIjoiY2pxbWpyeXAzMDJsZDN5b2N0djZ2MzE0cSJ9.dWayph2vNAy2-8OI94a8UA' username='' wait-tile-color='#dddddd' />
+      <languages />
+      <layers>
+        <layer display-name='Streets Classic' name='mapbox.streets-basic' show-ui='true' type='features' />
+      </layers>
+      <properties />
+      <map-styles>
+        <map-style display-name='Normal' name='Normal' wait-tile-color='#dddddd'>
+          <map-layer-style name='Streets Classic' request-string='mapbox.streets-basic' />
+        </map-style>
+      </map-styles>
+      <mapsource-defaults version='18.1'>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='mapbox.streets-basic' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+      </mapsource-defaults>
+      <map-attribution copyright-string='About Maps' copyright-url='http://www.tableau.com/mapdata' short-copyright-string='' />
+    </mapsource>
+    <mapsource inline='true' name='fancy' source-platform='win' version='18.1'>
+      <connection api-key='pk.eyJ1Ijoidmlqamlrb21hbGkiLCJhIjoiY2pxbWpyeXAzMDJsZDN5b2N0djZ2MzE0cSJ9.dWayph2vNAy2-8OI94a8UA' class='MapBox' description='Mapbox Emerald' full-url='https://api.mapbox.com/v4/{L}/{Z}/{X}/{Y}{D}.png256?access_token=pk.eyJ1Ijoidmlqamlrb21hbGkiLCJhIjoiY2pxbWpyeXAzMDJsZDN5b2N0djZ2MzE0cSJ9.dWayph2vNAy2-8OI94a8UA' inline='true' layer-separator=',' offline='' port='443' server='api.mapbox.com' service='https' url-format='/v4/{L}/{Z}/{X}/{Y}{D}.png256?access_token=pk.eyJ1Ijoidmlqamlrb21hbGkiLCJhIjoiY2pxbWpyeXAzMDJsZDN5b2N0djZ2MzE0cSJ9.dWayph2vNAy2-8OI94a8UA' username='' wait-tile-color='#dddddd' />
+      <languages />
+      <layers>
+        <layer display-name='Emerald' name='mapbox.emerald' show-ui='true' type='features' />
+      </layers>
+      <properties />
+      <map-styles>
+        <map-style display-name='fancy' name='fancy' wait-tile-color='#dddddd'>
+          <map-layer-style name='Emerald' request-string='mapbox.emerald' />
+        </map-style>
+      </map-styles>
+      <mapsource-defaults version='18.1'>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='mapbox.emerald' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+      </mapsource-defaults>
+      <map-attribution copyright-string='About Maps' copyright-url='http://www.tableau.com/mapdata' short-copyright-string='' />
+    </mapsource>
+    <mapsource inline='true' name='general' source-platform='win' version='18.1'>
+      <connection api-key='pk.eyJ1Ijoidmlqamlrb21hbGkiLCJhIjoiY2pxbWpyeXAzMDJsZDN5b2N0djZ2MzE0cSJ9.dWayph2vNAy2-8OI94a8UA' class='MapBox' description='A monotone basemap that&apos;s easy to recolor.' full-url='https://api.mapbox.com/v4/{L}/{Z}/{X}/{Y}{D}.png256?access_token=pk.eyJ1Ijoidmlqamlrb21hbGkiLCJhIjoiY2pxbWpyeXAzMDJsZDN5b2N0djZ2MzE0cSJ9.dWayph2vNAy2-8OI94a8UA' inline='true' layer-separator=',' offline='' port='443' server='api.mapbox.com' service='https' tileset='US\normal' url-format='/v4/{L}/{Z}/{X}/{Y}{D}.png256?access_token=pk.eyJ1Ijoidmlqamlrb21hbGkiLCJhIjoiY2pxbWpyeXAzMDJsZDN5b2N0djZ2MzE0cSJ9.dWayph2vNAy2-8OI94a8UA' username='' wait-tile-color='#dddddd' />
+      <languages />
+      <layers>
+        <layer display-name='Mapbox Light' name='mapbox.light' show-ui='true' type='features' />
+      </layers>
+      <properties />
+      <map-styles>
+        <map-style display-name='general' name='general' wait-tile-color='#dddddd'>
+          <map-layer-style name='Mapbox Light' request-string='mapbox.light' />
+        </map-style>
+      </map-styles>
+      <mapsource-defaults version='18.1'>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='mapbox.light' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+      </mapsource-defaults>
+      <map-attribution copyright-string='About Maps' copyright-url='http://www.tableau.com/mapdata' short-copyright-string='' />
+    </mapsource>
+  </mapsources>
+  <worksheets>
+    <worksheet name='Bof flats'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Block of flats</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='application_train' name='federated.0o7yu7h0j0o1gf1cx38ze06fw1dc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0o7yu7h0j0o1gf1cx38ze06fw1dc'>
+            <column caption='Amt Credit' datatype='real' name='[AMT_CREDIT]' role='measure' type='quantitative' />
+            <column caption='Code Gender' datatype='string' name='[CODE_GENDER]' role='dimension' type='nominal' />
+            <column caption='Flag Own Realty' datatype='string' name='[FLAG_OWN_REALTY]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column caption='Housetype Mode' datatype='string' name='[HOUSETYPE_MODE]' role='dimension' type='nominal' />
+            <column caption='Name Education Type' datatype='string' name='[NAME_EDUCATION_TYPE]' role='dimension' type='nominal' />
+            <column caption='Name Housing Type' datatype='string' name='[NAME_HOUSING_TYPE]' role='dimension' type='nominal' />
+            <column-instance column='[CODE_GENDER]' derivation='None' name='[none:CODE_GENDER:nk]' pivot='key' type='nominal' />
+            <column-instance column='[FLAG_OWN_REALTY]' derivation='None' name='[none:FLAG_OWN_REALTY:nk]' pivot='key' type='nominal' />
+            <column-instance column='[HOUSETYPE_MODE]' derivation='None' name='[none:HOUSETYPE_MODE:nk]' pivot='key' type='nominal' />
+            <column-instance column='[NAME_EDUCATION_TYPE]' derivation='None' name='[none:NAME_EDUCATION_TYPE:nk]' pivot='key' type='nominal' />
+            <column-instance column='[NAME_HOUSING_TYPE]' derivation='None' name='[none:NAME_HOUSING_TYPE:nk]' pivot='key' type='nominal' />
+            <column-instance column='[AMT_CREDIT]' derivation='Sum' name='[sum:AMT_CREDIT:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:CODE_GENDER:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:CODE_GENDER:nk]' member='&quot;F&quot;' />
+              <groupfilter function='member' level='[none:CODE_GENDER:nk]' member='&quot;M&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:CODE_GENDER:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[sum:AMT_CREDIT:qk]' />
+              <color column='[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[sum:AMT_CREDIT:qk]' />
+              <text column='[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:FLAG_OWN_REALTY:nk]' />
+              <text column='[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:HOUSETYPE_MODE:nk]' />
+              <text column='[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:NAME_EDUCATION_TYPE:nk]' />
+              <text column='[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:NAME_HOUSING_TYPE:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-transparency' value='165' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#499894' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000'>Living space with multiple perspective</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='application_train' name='federated.0o7yu7h0j0o1gf1cx38ze06fw1dc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0o7yu7h0j0o1gf1cx38ze06fw1dc'>
+            <column caption='Code Gender' datatype='string' name='[CODE_GENDER]' role='dimension' type='nominal' />
+            <column caption='Flag Own Realty' datatype='string' name='[FLAG_OWN_REALTY]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column caption='Housetype Mode' datatype='string' name='[HOUSETYPE_MODE]' role='dimension' type='nominal' />
+            <column caption='Livingapartments Avg' datatype='real' name='[LIVINGAPARTMENTS_AVG]' role='measure' type='quantitative' />
+            <column caption='Livingapartments Medi' datatype='real' name='[LIVINGAPARTMENTS_MEDI]' role='measure' type='quantitative' />
+            <column caption='Livingapartments Mode' datatype='real' name='[LIVINGAPARTMENTS_MODE]' role='measure' type='quantitative' />
+            <column caption='Livingarea Avg' datatype='real' name='[LIVINGAREA_AVG]' role='measure' type='quantitative' />
+            <column-instance column='[CODE_GENDER]' derivation='None' name='[none:CODE_GENDER:nk]' pivot='key' type='nominal' />
+            <column-instance column='[FLAG_OWN_REALTY]' derivation='None' name='[none:FLAG_OWN_REALTY:nk]' pivot='key' type='nominal' />
+            <column-instance column='[HOUSETYPE_MODE]' derivation='None' name='[none:HOUSETYPE_MODE:nk]' pivot='key' type='nominal' />
+            <column-instance column='[LIVINGAPARTMENTS_AVG]' derivation='Sum' name='[sum:LIVINGAPARTMENTS_AVG:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[LIVINGAPARTMENTS_MEDI]' derivation='Sum' name='[sum:LIVINGAPARTMENTS_MEDI:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[LIVINGAPARTMENTS_MODE]' derivation='Sum' name='[sum:LIVINGAPARTMENTS_MODE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[LIVINGAREA_AVG]' derivation='Sum' name='[sum:LIVINGAREA_AVG:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:CODE_GENDER:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:CODE_GENDER:nk]' />
+              <groupfilter function='member' level='[none:CODE_GENDER:nk]' member='&quot;XNA&quot;' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:CODE_GENDER:nk]' direction='DESC' using='[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[sum:LIVINGAPARTMENTS_AVG:qk]' />
+          <filter class='categorical' column='[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:HOUSETYPE_MODE:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:HOUSETYPE_MODE:nk]' />
+              <groupfilter from='&quot;block of flats&quot;' function='range' level='[none:HOUSETYPE_MODE:nk]' to='&quot;terraced house&quot;' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:HOUSETYPE_MODE:nk]' direction='DESC' using='[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[sum:LIVINGAPARTMENTS_AVG:qk]' />
+          <slices>
+            <column>[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:HOUSETYPE_MODE:nk]</column>
+            <column>[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:CODE_GENDER:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:HOUSETYPE_MODE:nk]' value='198' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' scope='rows' value='#ffffff' />
+            <format attr='band-color' scope='rows' value='#c0c0c0' />
+            <format attr='background-color' data-class='subtotal' scope='rows' value='#ffaa00' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#aaaaff' />
+            <format attr='band-color' scope='rows' value='#00ffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-level' scope='rows' value='1' />
+            <format attr='band-size' scope='cols' value='0' />
+            <format attr='background-color' value='#e6e6e6' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:FLAG_OWN_REALTY:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='167' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#69aaa5' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[sum:LIVINGAPARTMENTS_AVG:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:FLAG_OWN_REALTY:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+                <format attr='mark-transparency' value='167' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#69aaa5' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[sum:LIVINGAPARTMENTS_MEDI:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:FLAG_OWN_REALTY:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+                <format attr='mark-transparency' value='167' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#69aaa5' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[sum:LIVINGAPARTMENTS_MODE:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:FLAG_OWN_REALTY:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+                <format attr='mark-transparency' value='167' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#69aaa5' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[sum:LIVINGAREA_AVG:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:FLAG_OWN_REALTY:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+                <format attr='mark-transparency' value='167' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#69aaa5' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[sum:LIVINGAPARTMENTS_AVG:qk] + ([federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[sum:LIVINGAPARTMENTS_MEDI:qk] + ([federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[sum:LIVINGAPARTMENTS_MODE:qk] + [federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[sum:LIVINGAREA_AVG:qk])))</rows>
+        <cols>([federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:CODE_GENDER:nk] / [federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:HOUSETYPE_MODE:nk])</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Bof flats'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[sum:AMT_CREDIT:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:CODE_GENDER:nk]</field>
+            <field>[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:FLAG_OWN_REALTY:nk]</field>
+            <field>[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:HOUSETYPE_MODE:nk]</field>
+            <field>[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:NAME_EDUCATION_TYPE:nk]</field>
+            <field>[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:NAME_HOUSING_TYPE:nk]</field>
+            <field>[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:RATE_DOWN_PAYMENT:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F6A92066-D848-4544-9B17-93F588CBEE8C}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:FLAG_OWN_REALTY:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:CODE_GENDER:nk]</field>
+                    <field>[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:HOUSETYPE_MODE:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[sum:LIVINGAPARTMENTS_MODE:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[cnt:FLAG_OWN_REALTY:qk]</field>
+                  <field>[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:CODE_GENDER:nk]</field>
+                  <field>[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:HOUSETYPE_MODE:nk]</field>
+                  <field>[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[sum:LIVINGAPARTMENTS_AVG:qk]</field>
+                  <field>[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[sum:LIVINGAPARTMENTS_MODE:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>54747</value>
+                <value>&quot;M&quot;</value>
+                <value>%null%</value>
+                <value>5.6269999999999989</value>
+                <value>6.1094000000000008</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0o7yu7h0j0o1gf1cx38ze06fw1dc].[none:FLAG_OWN_REALTY:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B9168308-A5C5-40F4-9D17-8170DCF240AE}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Bof flats' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
